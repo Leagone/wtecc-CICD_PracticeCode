@@ -1,0 +1,11 @@
+name: testCI/CD
+on: 
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
+
+jobs:
+  buils:
+    runs-on: ubuntu-latest
+    container: python:3.9-slim
